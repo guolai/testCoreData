@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="14F27" minimumToolsVersion="Xcode 7.0">
+    <entity name="AlbumInfo" representedClassName="AlbumInfo" syncable="YES">
+        <attribute name="attribute1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute5" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute6" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute7" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute8" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute9" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute10" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="QQUser" representedClassName="QQUser" syncable="YES">
+        <attribute name="attribute" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute5" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="foldersOfUser" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SongFolder" inverseName="user" inverseEntity="SongFolder" syncable="YES"/>
+    </entity>
+    <entity name="SongFolder" representedClassName="SongFolder" syncable="YES">
+        <attribute name="attribute1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute5" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute6" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute7" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute8" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute9" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute10" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="QQUser" inverseName="foldersOfUser" inverseEntity="QQUser" syncable="YES"/>
+    </entity>
+    <entity name="SongInfo" representedClassName="SongInfo" syncable="YES">
+        <attribute name="attribute1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute5" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute6" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute7" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute8" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute9" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute10" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute11" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute12" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute13" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute14" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute15" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute16" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute17" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute18" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute19" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute20" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute21" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute22" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute23" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute24" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute25" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="AlbumInfo" positionX="-117" positionY="-27" width="128" height="210"/>
+        <element name="SongFolder" positionX="52" positionY="-27" width="128" height="223"/>
+        <element name="SongInfo" positionX="-290" positionY="-54" width="128" height="435"/>
+        <element name="QQUser" positionX="-117" positionY="144" width="128" height="148"/>
+    </elements>
+</model>

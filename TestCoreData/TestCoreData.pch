@@ -1,0 +1,21 @@
+//
+//  TestCoreData.pch
+//  TestCoreData
+//
+//  Created by bobozhu on 15/11/24.
+//  Copyright © 2015年 bobozhu. All rights reserved.
+//
+
+#ifndef TestCoreData_pch
+#define TestCoreData_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "Constant.h"
+
+#import "ObjectiveRecord.h"
+
+#endif /* TestCoreData_pch */
